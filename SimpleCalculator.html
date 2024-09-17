@@ -20,7 +20,7 @@
 			} else{
 				inp = document.getElementById("input").value;
 				out = document.getElementById("output").value;
-				concatExp = out.concat(inp);
+				concatExp = inp * out;
 				solution = eval(concatExp);
 				document.getElementById("output").value = solution;
 				document.getElementById("input").value = "";
