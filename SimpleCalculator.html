@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Calculator</title>
+
+	<script>
+		function place(val){
+			result = document.getElementById("input").value + val;
+			document.getElementById("input").value = result;
+		}
+
+		function solve(){
+			if(document.getElementById("output").value === ""){
+				solution = eval(document.getElementById("input").value);
+				document.getElementById("output").value = solution;
+				document.getElementById("input").value = "";
+			} else{
+				inp = document.getElementById("input").value;
+				out = document.getElementById("output").value;
+				concatExp = out.concat(inp);
+				solution = eval(concatExp);
+				document.getElementById("output").value = solution;
+				document.getElementById("input").value = "";
+			}
+		}
+	</script>
+	<!--place function places a number or symbol into the input box-->
+	<!--solve function uses an if statement to determine if it needs to combine info from the input and output boxes
+		then it uses eval() to evaluate the expression-->
+</head>
+
+<body>
+	<h1>Calculator</h1>
+
+	<form>
+		<!--Input and output text controls-->
+		<div>
+			<input type="text" id="input" size="18" maxlength="100">
+			<br>
+			<input type="text" id="output" size="18" maxlength="100">
+		</div>
+
+		<!--Calculator buttons-->
+		<div>
+			<input type="button" id="one" value = "1" onclick="place(this.value)">
+			<input type="button" id="two" value = "2" onclick="place(this.value)">
+			<input type="button" id="three" value = "3" onclick="place(this.value)">
+			<input type="button" id="plus" value = "+" onclick="place(this.value)">
+		</div>
+
+		<div>
+			<input type="button" id="four" value = "4" onclick="place(this.value)">
+			<input type="button" id="five" value = "5" onclick="place(this.value)">
+			<input type="button" id="sixe" value = "6" onclick="place(this.value)">
+			<input type="button" id="minus" value = "-" onclick="place(this.value)">
+		</div>
+
+		<div>
+			<input type="button" id="seven" value = "7" onclick="place(this.value)">
+			<input type="button" id="eight" value = "8" onclick="place(this.value)">
+			<input type="button" id="nine" value = "9" onclick="place(this.value)">
+			<input type="button" id="astericks" value = "*" onclick="place(this.value)">
+		</div>
+
+		<div>
+			<input type="button" id="zero" value = "0" onclick="place(this.value)">
+			<input type="button" id="decimal" value = "." onclick="place(this.value)">
+			
+			<!--The equal sign solves the expression in the input box-->
+			<input type="button" id="equals" value = "=" onclick="solve(this.form)">
+			
+			<input type="button" id="slash" value = "/" onclick="place(this.value)">
+		</div>
+
+		<!--Clear button is a reset button-->
+		<input type="reset" id="clear" value = "Clear">
+	</form>
+
+</body>
+</html>
