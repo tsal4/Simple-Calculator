@@ -6,14 +6,14 @@ This is a simple calculator that is structured with HTML and given functionality
 
 The calculator uses the JavaScript "eval" function to solve using the correct order of operations.
 <br>
-![simple_equation_before](https://github.com/user-attachments/assets/d1821bf2-5d25-4f3b-904a-33c2835bf9e3)
+![simple_before](https://github.com/user-attachments/assets/0ad84018-f304-459c-8ce3-05f9a0835bed)
 <br>
-![simple_equation_after](https://github.com/user-attachments/assets/691033ea-2fb0-4e94-ad1e-434673d4c11a)
+![simple_after](https://github.com/user-attachments/assets/d5de37a3-46f1-4478-9c7f-77ab67e6524a)
 
 
 
 The "solve" function determines whether or not there is anything in the output text control. If so, the input and output need to be concatenated before being evalutated.
 <br>
-
+![complex_before](https://github.com/user-attachments/assets/48595e44-4eba-45a6-968e-10982f5124a2)
 <br>
-
+![complex_after](https://github.com/user-attachments/assets/bb468420-b694-42dd-a551-ed49a2d5a623)
