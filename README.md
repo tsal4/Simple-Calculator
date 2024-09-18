@@ -14,6 +14,6 @@ The calculator uses the JavaScript "eval" function to solve using the correct or
 
 The "solve" function determines whether or not there is anything in the output text control. If so, the input and output need to be concatenated before being evalutated.
 <br>
-![complex_before](https://github.com/user-attachments/assets/a7dfdd8d-b785-4559-9bf0-56ef438217a4)
+
 <br>
-![complex_after](https://github.com/user-attachments/assets/c31caa1f-3e2c-4f32-a051-5690158538df)
+
